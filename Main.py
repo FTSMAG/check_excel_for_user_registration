@@ -12,11 +12,19 @@ def current_template():
         file.write(rezult.content)
 
 
+def parser():
+    df_parse = pd.read_excel('templete.xlsx')
+    #print(df_parse.head(0))
+    for i in df_parse.head(0):
+        print(i)
+    if 'Логин' and 'Пароль' in df_parse.head(0):
+        print("ДАДАДА")
 
 
-#execel = pd.read_excel('./Сибирь Заведение_новых_пользователей_ЦУП-ЕДГ-ЕГЭ (004).xlsx')
-
-#print(execel.head())
 
 
-current_template()
+
+
+
+#current_template()
+parser()
